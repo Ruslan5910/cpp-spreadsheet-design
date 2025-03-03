@@ -39,7 +39,7 @@ private:
 
 class Cell : public CellInterface {
 public:
-    Cell();
+    Cell(Sheet& sheet);
     ~Cell();
     void Set(std::string text);
     void Clear();

@@ -40,7 +40,7 @@ private:
 class Cell : public CellInterface {
 public:
     Cell();
-    ~Cell() = default;
+    ~Cell();
     void Set(std::string text);
     void Clear();
     Value GetValue() const override;

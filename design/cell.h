@@ -52,5 +52,6 @@ private:
     Sheet& sheet_reference;
     std::unordered_set<Cell*> dependent_cell;
     std::unordered_set<Cell*> which_depends_on;
-    bool FindCircularDependences(const Impl& impl_copy);
+    const bool FindCircularDependences(const Impl& impl_copy);
+    void CashInvalidation();
 };
